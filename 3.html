@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let m = prompt('enter value of row');
+let n = m / 2;
+let s = '';
+for (let i = Math.round(-1 * n); i < Math.round(n); i++) {
+    for (let j = 0; j < m; j++) {
+        if (
+            Math.abs(i) == j ||
+            Math.abs(i) + j == m - 1 ||
+            i + j == m - 1 ||
+            i + j == 0
+        )
+            s += '* ';
+        else s += '&nbsp&nbsp ';
+    }
+    s += '<br/>';
+}
+document.write(s);
+    </script>
+</body>
+</html>

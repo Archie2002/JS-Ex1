@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s =''
+        let n = prompt('enter n value');
+        for(let i=0; i<n; i++){
+            for(let j=1; j<=n; j++){
+                if(i<j)
+                s +=  j;
+                else
+                s += '&nbsp'
+            }
+            s+= '<br/>'
+        }
+
+        for(let i = n-1; i>0; i--){
+            for(let j=1; j<=n; j++){
+                if(i<=j)
+                    s += j;
+                    else
+                    s += '&nbsp'
+            }
+            s += '<br/>'
+        }
+        
+        document.write(s)
+
+    </script>
+    
+</body>
+</html>
